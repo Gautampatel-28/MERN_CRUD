@@ -10,11 +10,11 @@ const app = express();
 app.use(express.json());
 
 // CORS Configuration
-app.use(cors({
-    origin: 'http://localhost:5555',
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    allowedHeaders: ['Content-Type'],
-}));
+// app.use(cors({
+//     origin: 'http://localhost:5555',
+//     methods: ['GET', 'POST', 'PUT', 'DELETE'],
+//     allowedHeaders: ['Content-Type'],
+// }));
 
 // Route to check server status
 app.get('/', (req, res) => {
