@@ -26,6 +26,7 @@ const EditBook = () => {
         setTitle(bookData.title || "");
         setAuthor(bookData.author || "");
         setPublishYear(bookData.publishYear || "");
+        enqueueSnackbar('Book Edited Successfully', {variant: 'success'});
         setLoading(false);
       })
       .catch((err) => {
